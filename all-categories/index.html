@@ -6,19 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Dev Blog">
-    <title>Archives: 2021 - Dev Blog</title>
+    <title>all-categories - Dev Blog</title>
     <meta name="author" content="YuryangKim">
     
     
     
-    <script type="application/ld+json">{}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"https://yuryangkim.github.io","author":{"@type":"Person","name":"YuryangKim","sameAs":["https://github.com/YurynagKim","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"name":"Dev Blog","description":"쪼렙 개발자의 성장일기","url":"https://yuryangkim.github.io"}</script>
     <meta name="description" content="쪼렙 개발자의 성장일기">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="Dev Blog">
-<meta property="og:url" content="https://yuryangkim.github.io/archives/2021/index.html">
+<meta property="og:title" content="all-categories">
+<meta property="og:url" content="https://yuryangkim.github.io/all-categories/index.html">
 <meta property="og:site_name" content="Dev Blog">
 <meta property="og:description" content="쪼렙 개발자의 성장일기">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-01-27T15:12:22.626Z">
+<meta property="article:modified_time" content="2021-01-27T15:12:22.601Z">
 <meta property="article:author" content="YuryangKim">
 <meta name="twitter:card" content="summary">
     
@@ -260,122 +262,35 @@
                         hasCoverMetaIn
                         ">
                 
-    <section class="postShorten-group main-content-wrap">
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a
-                            class="link-unstyled"
-                            href="/2021/01/28/Start_Git/"
-                            aria-label=": Git 시작하기"
-                        >
-                            Git 시작하기
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2021-01-28T00:00:00+09:00">
-	
-		    Jan 28, 2021
-    	
-    </time>
-    
-        <span>in </span>
+<div id="categories-archives" class="main-content-wrap">
+    <form id="filter-form" action="##">
+        <input name="category" type="text" class="form-control input--xlarge"
+               placeholder="Search category" autofocus="autofocus">
+    </form>
+    <h5 class="archive-result text-color-base text-xlarge"
+        data-message-zero="no category found"
+        data-message-one="1 category found"
+        data-message-other="{n} categories found"></h5>
+
+        <section class="boxes">
         
-    <a class="category-link" href="/categories/git/">git</a>, <a class="category-link" href="/categories/git/github/">github</a>
-
-
-    
+            
+                <div><a href="#posts-list-git" class="category-anchor" data-category="git" data-parent-categories="">git</a><ul style="margin-bottom:0;"><div><a href="#posts-list-github" class="category-anchor" data-category="github" data-parent-categories="git"> / github</a></div></ul></div>
+            
+        
+            
+        
+    </section>
+    <section class="boxes">
+        
+            
+                    <div id="posts-list-git" class="archive " data-category="git" data-parent-categories=""><h4 class="archive-title text-xlarge"><a class="link-unstyled" href="/categories/git/">git (1)</a></h4><ul class="archive-posts"><li class="archive-post"><a class="archive-post-title" href="/2021/01/28/Start_Git/">Git 시작하기</a><span class="archive-post-date"> - Jan 28, 2021</span></li><div id="posts-list-github" class="archive " data-category="github" data-parent-categories="git"><h4 class="archive-title text-xlarge"><a class="link-unstyled" href="/categories/git/github/">github (1)</a></h4><ul class="archive-posts"><li class="archive-post"><a class="archive-post-title" href="/2021/01/28/Start_Git/">Git 시작하기</a><span class="archive-post-date"> - Jan 28, 2021</span></li></ul></div></ul></div>
+            
+        
+            
+        
+    </section>
 </div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <!-- excerpt -->
-<ol>
-<li>Git을 시작하기 전 해야 할 작업</li>
-<li>Git init</li>
-<li>Git clone</li>
-</ol>
-<h1 id="1-git을-시작하기-전-해야-할-작업"><a href="#1-git을-시작하기-전-해야-할-작업" class="headerlink" title="1. git을 시작하기 전 해야 할 작업"></a>1. git을 시작하기 전 해야 할 작업</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;당신의유저네임&quot;</span><br><span class="line">$ git config --global user.email &quot;당신의메일주소&quot;</span><br><span class="line">$ git config --global core.editor &quot;vim&quot;</span><br><span class="line">$ git config --global core.pager &quot;cat&quot;</span><br></pre></td></tr></table></figure>
-<h1 id="2-git-init"><a href="#2-git-init" class="headerlink" title="2. git init"></a>2. git init</h1><ol>
-<li><p>프로젝트 폴더 만들기<br>  mkdir first-git-repo<br>  cd first-git-repo </p>
-</li>
-<li><p>local repository로서 역할 시작하기<br>  git init</p>
-</li>
-<li><p>github에서 새로 비어있는 remote repository생성<br> 복사한 주소를 local repository에 등록하기<br>  <a target="_blank" rel="noopener" href="https://github.com/%EB%8B%B9%EC%8B%A0%EC%9D%98%EC%9C%A0%EC%A0%80%EB%84%A4%EC%9E%84/first-git-repo.git">https://github.com/당신의유저네임/first-git-repo.git</a><br>  git remote add orign<a target="_blank" rel="noopener" href="https://github.com/%EB%8B%B9%EC%8B%A0%EC%9D%98%EC%9C%A0%EC%A0%80%EB%84%A4%EC%9E%84/first-git-repo.git">https://github.com/당신의유저네임/first-git-repo.git</a><br> (origin은 복사한 주소를 부리기 위한 이름이므로 다른 이름을 사용해도 무방)</p>
-<p>✅ 잘 추가 되었는지 확인하기<br> git remote get-url origin<br> 명령어를 입력하면 추가된 주소가 보인다. </p>
-</li>
-<li><p>새 파일을 만들고 작업 수행하기<br> touch README.md<br> vi README.md</p>
-<p> i를 눌러 insert모드 활성화<br> 텍스트 편집<br> esc를 눌러 다시 nomal mode 활성화<br> :wq 를 입력하여 저장한 뒤  vim을 종료</p>
-</li>
-<li><p>현재 프로젝트 상태 확인하기<br> git status<br> untracked files : README.md 가 보이면 다음 작업할 준비 완성 </p>
-</li>
-<li><p>work space에 추가된 새로운 파일을 index로 staging<br>  git add README.md</p>
-</li>
-<li><p>추가된 README.md에 대한 설명을 commit 하기<br>  git commit<br>  i를 눌러 insert mode 활성화<br>  커밋 메세지 작성<br>  esc키를 눌러 nomal mode 활성화<br>  :wq 입력하여 저장한 후 vim 종료<br>  git status 입력 commit 내역 확인<br>   (vim이 아직 어색하다면<br>   git commit -m “입력 내용” 바로 커밋 작성 가능)</p>
-<p>  ✅ commit message 깔끔하게 입력하기<br>   ·commit message의 제목에 말머리를 달아 카테고리를 바로 확인할 수 있도록 하기<br>   feat:, docs:, test:, refactor:</p>
-</li>
-<li><p>remote repository로 push<br> ❗첫 커밋이라면 -u (-set-upsteam) flag를 붙여 push<br> git push -u origin mast<br> ‼ 두번째 커밋부터는 -u 없이 바로 push<br> git push origin master</p>
-</li>
-</ol>
-<h1 id="3-git-clone"><a href="#3-git-clone" class="headerlink" title="3. git clone"></a>3. git clone</h1><ol>
-<li><p>github에서 remote repository를 먼저 생성한 뒤, 작업 공간으로 끌어와 작업 시작<br>LICENSE, README.md, .gitignore 등의 파일과 함께 생성</p>
-</li>
-<li><p>clone or download 버튼을 눌러 해당 repository 주소 복사</p>
-</li>
-<li><p>터미널에서 git clone 복사한remoteRepo주소 를 입력하여 작업공간에 local repository생성</p>
-</li>
-<li><p>새 파일을 만들고 작업 수행<br>touch README.md<br>vi README.md<br>i를 눌러 insert mode 활성화<br>텍스트 편집<br>esc키 눌러 nomal mode 활성화<br>:wq 를 입력하여 저장한 뒤 vim 종료</p>
-</li>
-<li><p>현재 프로젝트 상태 확인<br>git status<br>untracked files: README.md 가 보인다면 다음 작업할 준비 끝</p>
-</li>
-<li><p>workspace에 추가된 새로운 파일을 index로  staging<br>git add README.md</p>
-</li>
-<li><p>추가된 README.md에 대한 설명을 commit<br>git commit</p>
-</li>
-<li><p>commit이 끝났다면 remote repository로 push<br>git push origin master</p>
-</li>
-</ol>
-<p>✅ gitin과 다르게 remote repository에서 먼저 끌어와 사용하는 구조이기 때문에 -u flag를 붙이지 않아도 됨</p>
-                    
-                        
-
-
-                    
-                    
-                        <p>
-                            <a
-                                href="/2021/01/28/Start_Git/#post-footer"
-                                class="postShorten-excerpt_link link"
-                                aria-label=""
-                            >
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    <div class="pagination-bar">
-    <ul class="pagination">
-        
-        
-        <li class="pagination-number">page 1 of 1</li>
-    </ul>
-</div>
-
-</section>
-
-
 
                 <footer id="footer" class="main-content-wrap">
     <span class="copyrights">
