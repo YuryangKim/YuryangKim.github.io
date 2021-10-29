@@ -284,7 +284,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: false
-      show_date: true #포스팅 날짜 
       comments: # true
       share: true
       related: true
